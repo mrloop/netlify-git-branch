@@ -12,7 +12,7 @@
     "@oclif/core": "1.9",
     "@oclif/plugin-help": "5",
     "execa": "5.1.1",
-    "netlify": "9.0.0",
+    "netlify": "12.0.0",
     "netlify-cli": "10.10.2",
     "puppeteer": "13.7.0"
   },
