@@ -782,15 +782,10 @@
     "@netlify/local-functions-proxy-win32-ia32" "1.1.1"
     "@netlify/local-functions-proxy-win32-x64" "1.1.1"
 
-"@netlify/open-api@^2.10.0":
+"@netlify/open-api@^2.10.0", "@netlify/open-api@^2.11.0":
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-2.11.0.tgz#0086ce3cf13976cffe8e2b01bff869dd819cadb8"
   integrity sha512-ni6R1xdR8EtH0iB8ixGt9ocuboW+Q8eN4ilTX8lfNHS6Y6Q2S+O/aB2n1BnAgv39wopeQsQ2meL9vfEePURl7w==
-
-"@netlify/open-api@^2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-2.6.0.tgz#128c8d66ac8798e9f60824ca9857735c368090b6"
-  integrity sha512-VfYLiEXJIVIn25wrwNB/O+QkM3xPgCVcGSKZxM/i+oPCOgBK+4PEieRtfqhF4vXXwwOi68VaRWU7P3aRnb3nIA==
 
 "@netlify/plugins-list@^6.35.0":
   version "6.35.0"
@@ -8553,17 +8548,17 @@ netlify-redirector@^0.2.1:
   resolved "https://registry.yarnpkg.com/netlify-redirector/-/netlify-redirector-0.2.1.tgz#efdb761ea2c52edb3ecb5f237db0e10861f2ff0e"
   integrity sha512-17vDR9p1Loanp+vd57y+b6WlKb5X+qb0LZ44oTYsKJbdonz4Md+Ybv1lzH1w1aKm5YWWXHR8LMpWyY9bjlAJKw==
 
-netlify@9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/netlify/-/netlify-9.0.0.tgz#d7f84a2c85d9cf81d84b94bedc9159856324ed4b"
-  integrity sha512-3QQpmCFSdCgsUEBLULwNxVojjFgYgooKhHtJ9OgjizzwJsNDYnBdAWKQ3lcpPX2etQ0quWJg5Uv8md02LuezZw==
+netlify@12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-12.0.0.tgz#3759dc152cb155f875e8433437e4d37ef48f8450"
+  integrity sha512-4LfNS4c/9301B0oxzosmHD7NHhOvvo4KlEmPH2AuMx9or6CXK2IP09K1MWnpdOyNA3Y/8jlUOtOTATK68jBK9A==
   dependencies:
-    "@netlify/open-api" "^2.6.0"
+    "@netlify/open-api" "^2.11.0"
     lodash.camelcase "^4.3.0"
     micro-api-client "^3.3.0"
-    node-fetch "^2.6.1"
+    node-fetch "^3.0.0"
     omit.js "^2.0.2"
-    p-wait-for "^3.2.0"
+    p-wait-for "^4.0.0"
     qs "^6.9.6"
 
 netlify@^11.0.2:
@@ -9309,7 +9304,7 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-p-wait-for@^3.0.0, p-wait-for@^3.2.0:
+p-wait-for@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/p-wait-for/-/p-wait-for-3.2.0.tgz#640429bcabf3b0dd9f492c31539c5718cb6a3f1f"
   integrity sha512-wpgERjNkLrBiFmkMEjuZJEWKKDrNfHCKA1OhyN1wg1FrLkULbviEy6py1AyJUgZ72YWFbZ38FIpnqvVqAlDUwA==
