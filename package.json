@@ -11,7 +11,7 @@
     "@oclif/command": "1.8.36",
     "@oclif/core": "1.26.2",
     "@oclif/plugin-help": "5.2.20",
-    "execa": "5.1.1",
+    "execa": "8.0.1",
     "netlify": "9.0.0",
     "netlify-cli": "10.18.0",
     "puppeteer": "21.5.0"
