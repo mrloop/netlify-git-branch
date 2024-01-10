@@ -7,6 +7,7 @@
     "netlify-git-branch": "./bin/run"
   },
   "bugs": "https://github.com/mrloop/netlify-git-branch/issues",
+  "type": "module",
   "dependencies": {
     "@oclif/command": "1.8.36",
     "@oclif/core": "1.26.2",
@@ -92,7 +93,7 @@
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "yarn build && oclif manifest && oclif readme",
     "release": "release-it",
-    "test": "DEBUG=netlify-git-branch:* mocha --forbid-only \"test/**/*.test.ts\" --no-timeout",
+    "test": "DEBUG=netlify-git-branch:* mocha --forbid-only \"test/**/*.test.[jt]s\" --no-timeout",
     "version": "oclif readme && git add README.md"
   },
   "types": "lib/index.d.ts"
