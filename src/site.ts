@@ -7,12 +7,16 @@ import {deploySite} from 'netlify-cli/src/utils/deploy/deploy-site.js'
 // https://docs.github.com/en/actions/reference/environment-variables
 declare type Debug = (...args: any[]) => void;
 
-export const nameDescription = "Name is prefixed onto the git branch name. For Example on branch 'my-feature' and a name of 'my-site' the domain will be 'https://my-site-my-feature.netlify.app'."
+export const nameDescription =
+  "Name is prefixed onto the git branch name. For Example on branch 'my-feature' and a name of 'my-site' the domain will be 'https://my-site-my-feature.netlify.app'."
 
 export default class Site {
   netlify: any;
 
-  constructor(public prefix: string, public debug: Debug) {
+  constructor(
+    public prefix: string,
+    public debug: Debug,
+  ) {
     this.prefix = prefix
     this.debug = debug
     this.netlify = new NetlifyApi(process.env.NETLIFY_AUTH_TOKEN)
@@ -74,7 +78,9 @@ export default class Site {
   }
 
   async checkDeploy(url: string, selector: string): Promise<void> {
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({
+      args: [process.env.CI ? '--no-sandbox' : ''],
+    })
     const page = await browser.newPage()
     await page.goto(url)
     await page.waitForSelector(selector, {timeout: 10_000})
