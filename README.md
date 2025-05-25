@@ -22,7 +22,7 @@ $ npm install -g netlify-git-branch
 $ netlify-git-branch COMMAND
 running command...
 $ netlify-git-branch (--version)
-netlify-git-branch/2.0.0 linux-x64 node-v16.13.0
+netlify-git-branch/3.0.0 linux-x64 node-v18.18.2
 $ netlify-git-branch --help [COMMAND]
 USAGE
   $ netlify-git-branch COMMAND
@@ -33,7 +33,7 @@ USAGE
 <!-- commands -->
 * [`netlify-git-branch delete NAME`](#netlify-git-branch-delete-name)
 * [`netlify-git-branch deploy NAME`](#netlify-git-branch-deploy-name)
-* [`netlify-git-branch help [COMMAND]`](#netlify-git-branch-help-command)
+* [`netlify-git-branch help [COMMANDS]`](#netlify-git-branch-help-commands)
 
 ## `netlify-git-branch delete NAME`
 
@@ -41,7 +41,7 @@ Delete netlify staging subdomain for this branch
 
 ```
 USAGE
-  $ netlify-git-branch delete [NAME]
+  $ netlify-git-branch delete NAME
 
 ARGUMENTS
   NAME  Name is prefixed onto the git branch name. For Example on branch 'my-feature' and a name of 'my-site' the domain
@@ -54,7 +54,7 @@ EXAMPLES
   $ netlify-git-branch delete my-site
 ```
 
-_See code: [src/commands/delete/index.ts](https://github.com/mrloop/netlify-git-branch/blob/v2.0.0/src/commands/delete/index.ts)_
+_See code: [src/commands/delete/index.ts](https://github.com/mrloop/netlify-git-branch/blob/v3.0.0/src/commands/delete/index.ts)_
 
 ## `netlify-git-branch deploy NAME`
 
@@ -62,7 +62,7 @@ Deploy branch to netlify staging subdomain
 
 ```
 USAGE
-  $ netlify-git-branch deploy [NAME] [--dir <value>] [--assert <value>]
+  $ netlify-git-branch deploy NAME [--dir <value>] [--assert <value>]
 
 ARGUMENTS
   NAME  Name is prefixed onto the git branch name. For Example on branch 'my-feature' and a name of 'my-site' the domain
@@ -79,26 +79,25 @@ EXAMPLES
   $ netlify-git-branch deploy my-site --dir dist
 ```
 
-_See code: [src/commands/deploy/index.ts](https://github.com/mrloop/netlify-git-branch/blob/v2.0.0/src/commands/deploy/index.ts)_
+_See code: [src/commands/deploy/index.ts](https://github.com/mrloop/netlify-git-branch/blob/v3.0.0/src/commands/deploy/index.ts)_
 
-## `netlify-git-branch help [COMMAND]`
+## `netlify-git-branch help [COMMANDS]`
 
-display help for netlify-git-branch
+Display help for netlify-git-branch.
 
 ```
 USAGE
-  $ netlify-git-branch help [COMMAND] [--json] [--all]
+  $ netlify-git-branch help [COMMANDS] [-n]
 
 ARGUMENTS
-  COMMAND  command to show help for
+  COMMANDS  Command to show help for.
 
 FLAGS
-  --all   see all commands in CLI
-  --json  Format output as json.
+  -n, --nested-commands  Include all nested commands in the output.
 
 DESCRIPTION
-  display help for netlify-git-branch
+  Display help for netlify-git-branch.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v4.0.3/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.20/src/commands/help.ts)_
 <!-- commandsstop -->

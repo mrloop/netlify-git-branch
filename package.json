@@ -1,7 +1,7 @@
 {
   "name": "netlify-git-branch",
   "description": "Feature branch staging environments with netlify and git.",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "mrloop <ewan@mrloop.com>",
   "bin": {
     "netlify-git-branch": "./bin/run"

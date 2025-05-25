@@ -1,6 +1,30 @@
 
 
 
+## v3.0.0 (2025-05-25)
+
+
+#### :boom: Breaking Change
+* [#281](https://github.com/mrloop/netlify-git-branch/pull/281) Update node versions ([@mrloop](https://github.com/mrloop))
+
+#### :bug: Bug Fix
+* [#280](https://github.com/mrloop/netlify-git-branch/pull/280) If CI add `--no-sandbox` to puppeteer launch ([@mrloop](https://github.com/mrloop))
+* [#163](https://github.com/mrloop/netlify-git-branch/pull/163) Need to supply rootDir to deploySite for success ([@mrloop](https://github.com/mrloop))
+* [#85](https://github.com/mrloop/netlify-git-branch/pull/85) Fix dependencies and lint error ([@mrloop](https://github.com/mrloop))
+
+#### :house: Internal
+* [#49](https://github.com/mrloop/netlify-git-branch/pull/49) Remove github workflow concurrency ([@mrloop](https://github.com/mrloop))
+* [#48](https://github.com/mrloop/netlify-git-branch/pull/48) Run single job a time to reduce frequency of network requests ([@mrloop](https://github.com/mrloop))
+* [#45](https://github.com/mrloop/netlify-git-branch/pull/45) Remove mocha timeout so tests run to completion ([@mrloop](https://github.com/mrloop))
+* [#44](https://github.com/mrloop/netlify-git-branch/pull/44) In order to detect broken build run yarn build in github workflow ([@mrloop](https://github.com/mrloop))
+* [#40](https://github.com/mrloop/netlify-git-branch/pull/40) Wait for test to finish ([@mrloop](https://github.com/mrloop))
+* [#39](https://github.com/mrloop/netlify-git-branch/pull/39) Print test debug ([@mrloop](https://github.com/mrloop))
+* [#38](https://github.com/mrloop/netlify-git-branch/pull/38) If tests timeout try and cleanup test deploy ([@mrloop](https://github.com/mrloop))
+
+#### Committers: 1
+- Ewan McDougall ([@mrloop](https://github.com/mrloop))
+
+
 ## v2.0.0 (2021-12-02)
 
 #### :rocket: Enhancement
