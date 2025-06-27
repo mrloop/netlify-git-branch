@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
+    "composite": true,
     "declaration": true,
     "importHelpers": true,
-    "module": "commonjs",
+    "module": "ES2020",
+    "moduleResolution": "node",
     "outDir": "lib",
     "rootDir": "src",
     "strict": true,
@@ -10,5 +12,8 @@
   },
   "include": [
     "src/**/*"
-  ]
+  ],
+  "ts-node": {
+    "esm": true
+  }
 }
