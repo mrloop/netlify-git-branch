@@ -1,4 +1,4 @@
-import {Command, Flags} from '@oclif/core'
+import {Args, Command, Flags} from '@oclif/core'
 import Site, {nameDescription} from '../../site'
 
 export default class Deploy extends Command {
@@ -6,9 +6,12 @@ export default class Deploy extends Command {
 
   static examples = ['$ netlify-git-branch deploy my-site --dir dist'];
 
-  static args = [
-    {name: 'name', description: nameDescription, required: true},
-  ];
+  static args = {
+    name: Args.string({
+      description: nameDescription,
+      required: true,
+    }),
+  };
 
   static flags = {
     dir: Flags.string({
