@@ -79,7 +79,7 @@ export default class Site {
 
   async checkDeploy(url: string, selector: string): Promise<void> {
     const browser = await puppeteer.launch({
-      args: [process.env.CI ? '--no-sandbox' : ''],
+      args: ['--no-sandbox'],
     })
     const page = await browser.newPage()
     await page.goto(url)
