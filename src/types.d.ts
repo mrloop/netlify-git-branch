@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-empty-interface */
+
 // No types available so declaring empty modules
 declare module 'netlify';
 declare module 'netlify-cli/src/utils/deploy/deploy-site.js';

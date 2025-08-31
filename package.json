@@ -3,39 +3,38 @@
   "description": "Feature branch staging environments with netlify and git.",
   "version": "3.0.0",
   "author": "mrloop <ewan@mrloop.com>",
-  "bin": {
-    "netlify-git-branch": "./bin/run"
-  },
+  "bin": "./bin/run",
   "bugs": "https://github.com/mrloop/netlify-git-branch/issues",
   "dependencies": {
-    "@oclif/command": "1.8.36",
     "@oclif/core": "4.5.2",
-    "@oclif/plugin-help": "5.2.20",
+    "@oclif/plugin-help": "^6.2.32",
     "execa": "5.1.1",
     "netlify": "9.0.0",
     "netlify-cli": "10.18.0",
     "puppeteer": "21.11.0"
   },
   "devDependencies": {
-    "@oclif/test": "2.5.6",
-    "@types/chai": "4.3.20",
+    "@oclif/test": "^4.1.13",
+    "@types/chai": "^5.2.2",
     "@types/execa": "2.0.2",
     "@types/mocha": "10.0.10",
-    "@types/node": "18.18.9",
-    "@typescript-eslint/eslint-plugin": "6.21.0",
-    "chai": "4.5.0",
-    "eslint": "8.31.0",
-    "eslint-config-oclif": "4.0.0",
-    "eslint-config-oclif-typescript": "1.0.3",
+    "@types/node": "20.19.4",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "chai": "^6.0.1",
+    "eslint": "^8.57.0",
+    "eslint-config-oclif": "^4.0.0",
+    "eslint-config-oclif-typescript": "^1.0.3",
     "eslint-plugin-json": "3.1.0",
+    "eslint-plugin-n": "^17.21.3",
     "globby": "11.1.0",
     "mocha": "10.8.2",
-    "oclif": "3.17.2",
+    "oclif": "^4.22.16",
     "release-it": "15.6.0",
     "release-it-lerna-changelog": "5.0.0",
     "ts-node": "10.9.2",
     "tslib": "2.8.1",
-    "typescript": "4.5.5"
+    "typescript": "~5.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -59,11 +58,11 @@
     }
   },
   "volta": {
-    "node": "18.18.2",
+    "node": "20.19.4",
     "yarn": "1.22.22"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "files": [
     "/bin",
@@ -92,7 +91,7 @@
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "yarn build && oclif manifest && oclif readme",
     "release": "release-it",
-    "test": "DEBUG=netlify-git-branch:* mocha --forbid-only \"test/**/*.test.ts\" --no-timeout",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md"
   },
   "types": "lib/index.d.ts"

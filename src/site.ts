@@ -1,6 +1,7 @@
 import * as NetlifyApi from 'netlify'
 import * as puppeteer from 'puppeteer'
 import * as execa from 'execa'
+// eslint-disable-next-line n/no-missing-import
 import {deploySite} from 'netlify-cli/src/utils/deploy/deploy-site.js'
 
 // https://stackoverflow.com/questions/58033366/how-to-get-current-branch-within-github-actions
