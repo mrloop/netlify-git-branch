@@ -19,7 +19,7 @@
     "@types/chai": "5.2.2",
     "@types/execa": "2.0.2",
     "@types/mocha": "10.0.10",
-    "@types/node": "18.18.9",
+    "@types/node": "18.19.124",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "chai": "4.5.0",
     "eslint": "8.31.0",
