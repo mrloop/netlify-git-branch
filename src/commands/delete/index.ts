@@ -1,4 +1,4 @@
-import {Command} from '@oclif/core'
+import {Args, Command} from '@oclif/core'
 import Site, {nameDescription} from '../../site'
 
 export default class Delete extends Command {
@@ -6,9 +6,12 @@ export default class Delete extends Command {
 
   static examples = ['$ netlify-git-branch delete my-site'];
 
-  static args = [
-    {name: 'name', description: nameDescription, required: true},
-  ];
+  static args = {
+    name: Args.string({
+      description: nameDescription,
+      required: true,
+    }),
+  };
 
   async run(): Promise<void> {
     const {args} = await this.parse(Delete)
